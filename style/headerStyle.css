@@ -1,0 +1,196 @@
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size:12px;
+    }
+}
+@media screen and (max-width: 767px) {
+    html {
+        font-size:14px;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size:14px;
+    }
+}
+@media screen and (max-width: 992px) {
+    html {
+        font-size:16px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    html {
+        font-size:18px;
+    }
+} 
+#header {
+    position: sticky;
+    top: 0.08rem;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 0.30rem;
+    background-color: rgba(238, 238, 238, 0.3);
+    z-index:5;
+}
+#header #compLogo {
+    float:left;
+    width: 6%;
+    height: 100%;
+    margin-left:1rem;
+}
+#header #compLogo img {
+    border-radius: 50%;
+    width: 5rem;
+    height: 3.5rem;
+}
+#header #compLogo img:hover {
+    cursor:pointer;
+}
+#header #headerNav {
+    float:right;
+    display:block;
+}
+#header #headerNav > li {
+    float:right;
+    margin-right:0.7rem;
+    padding: 0rem 1rem;
+    list-style: none;
+    font-size:1.1rem;
+    border: 1px black solid;
+    border-radius: 20px;
+}
+#header #headerNav #Contact, #header #headerNav #Gallery {
+    position: relative;
+    top:0;
+}
+#header #headerNav #Contact ul ,#header #headerNav #Gallery ul {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: -40px;
+    width: 100%;
+}
+#header #headerNav #Contact:hover ul, #header #headerNav #Gallery:hover ul {
+    display: block;
+}
+#header #headerNav #Contact ul li, #header #headerNav #Gallery ul li {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: rgba(238, 238, 238, 0.4);
+    border-radius: 1rem;
+    border: 1px solid black;
+    list-style: none;
+    text-align: center;
+    opacity: 0; 
+    animation: fade-in 0.5s ease forwards;
+}
+#header #headerNav #Contact ul li a, #header #headerNav #Gallery ul li a {
+    text-decoration: none;
+    color:black;
+}
+#header #headerNav #Contact ul li:hover, #header #headerNav #Gallery ul li:hover {
+    background-color: rgba(188, 238, 238, 0.3);
+}
+#header #headerNav #Contact ul li:nth-child(1), 
+#header #headerNav #Gallery ul li:nth-child(1)  {
+    animation-delay: 0.1s; 
+}
+#header #headerNav #Contact ul li:nth-child(2), 
+#header #headerNav #Gallery ul li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+#header #headerNav #Gallery ul li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+#header #headerNav #Gallery ul li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+#header #headerNav #Gallery ul li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+#header #headerNav #Gallery ul li:nth-child(6) {
+    animation-delay: 0.6s;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.nav {
+    position: fixed;
+    top: 15%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #fff;
+    z-index:5;
+}
+.nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.nav-item {
+    position: relative;
+    padding: 0 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0.5rem;
+    z-index: 5;
+    opacity: 0; 
+    animation: fade-in 0.5s ease forwards;
+}
+.nav .nav-item:hover .nav-submenu {
+    display: block;
+}
+.nav-submenu a {
+    display: block;
+    padding: 10px;
+    background-color: rgba(238, 238, 238, 0.8);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.nav-submenu a:nth-child(1) {
+    animation-delay:0.1s;
+}
+.nav-submenu a:nth-child(2) {
+    animation-delay:0.2s;
+}
+.nav-submenu a:nth-child(3) {
+    animation-delay:0.3s;
+}
+.nav-submenu a:nth-child(4) {
+    animation-delay:0.4s;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.nav-submenu a:hover {
+    background-color: rgba(188, 238, 238, 0.8);
+}
+@media screen and (max-width: 1015px) {
+    #header #headerNav #Gallery, #header #headerNav #Categories {
+        display: none;
+    }
+}
+@media screen and (max-width: 735px) {
+    #header #headerNav {
+        display: none;
+    }
+}
+

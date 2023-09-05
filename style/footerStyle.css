@@ -1,0 +1,102 @@
+@media screen and (max-width: 576px) {
+    html {
+        font-size:12px;
+    }
+}
+@media screen and (max-width: 767px) {
+    html {
+        font-size:14px;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size:14px;
+    }
+}
+@media screen and (max-width: 992px) {
+    html {
+        font-size:16px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    html {
+        font-size:18px;
+    }
+} 
+#footer {
+    margin-top:1rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 20rem;
+    border-radius:0.30rem;
+    background-color: rgba(238, 238, 238, 0.3);
+}
+#footer li {
+    list-style: none;
+}
+#footer > div {
+    flex: 1 0 30%;
+    margin:1rem;
+}
+#footer #aboutUs {
+    padding-top:2rem;
+    line-height: 2rem;
+
+    order:1;
+}
+#footer #info {
+
+    order:2;
+}
+#footer #info h3{
+    text-align: center;
+    font-size:1.6rem;
+}
+#footer #info ul {
+    margin-top:5%;
+    margin-left:30%;
+}
+#footer #info ul li {
+    margin-bottom:2rem;
+    font-size:1.5rem;
+}
+#footer #info ul li a {
+    text-decoration: none;
+    color:black;
+    font-size:1.2rem;
+}
+#footer #info ul li a:hover {
+    color:aqua;
+}
+#footer #socialMedia {
+
+    order:3;
+}
+#footer #socialMedia h3 {
+    text-align: center;
+    font-size:1.6rem;
+}
+#footer #socialMedia ul {
+    margin-top:5%;
+    margin-left:25%;
+}
+#footer #socialMedia ul li {
+    margin-bottom:2rem;
+    font-size:1.5rem;
+}
+#footer #socialMedia ul li a {
+    text-decoration: none;
+    color:black;
+    font-size:1.2rem;
+}
+#footer #socialMedia ul li a:hover {
+    color:aqua;
+}
+#footer #socialMedia ul li a img{
+    margin-right:0.5rem;
+    vertical-align: middle;
+    width: 2rem;
+    height: 2rem;
+}

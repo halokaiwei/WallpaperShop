@@ -1,0 +1,162 @@
+@media screen and (max-width: 576px) {
+    html {
+        font-size:12px;
+    }
+}
+@media screen and (max-width: 767px) {
+    html {
+        font-size:14px;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size:14px;
+    }
+}
+@media screen and (max-width: 992px) {
+    html {
+        font-size:16px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    html {
+        font-size:18px;
+    }
+} 
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+#banner {
+    position: relative;
+    top:0.5rem;
+    width: 100%;
+    height: 30rem;
+    border-radius: 0.30rem;
+    text-align: center;
+    color:white;
+    background-image: url("../img/wallpaper4.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+#banner h1, #banner h3 {
+    margin:0rem;
+}
+#bannerWord {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#bannerWord h1 {
+    margin-bottom: 0.5rem;
+}
+#searching {
+    position: relative;
+    top:0px;
+}
+#searchMid {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+}
+#searchMid input {
+    position: relative;
+    top: 0;
+    width: 30rem;
+    height: 3rem;
+    padding: 0.07rem 0.1rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-indent: 5px;
+}
+#searchMid img {
+    position: absolute;
+    right:0.2rem;
+    width: 3rem;
+    height: 3rem;
+    margin-right:0.5rem;
+}
+#searchMid img:hover {
+    cursor:pointer;
+}
+@media screen and (max-width: 1012px) {
+    #bannerWord h1, #bannerWord h3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 630px) {
+    #searchMid {
+        display: none;
+    }
+}
+.wallpapers-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+}
+.wallpaper-card {
+    position:relative;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+}
+.wallpaper-card:hover .details{
+    opacity: 1;
+}
+.wallpaper-card img:hover{
+    cursor:pointer;
+}
+.wallpaper-card img {
+    width: 100%;
+    height: 80%;
+}
+.details {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #04AA6D;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+.details:hover {
+    cursor:pointer;
+}
+.wallpaper-card img {
+    width: 100%;
+}
+.clear {
+    clear: both;
+}
+.wallpapers-container {
+    margin-top:0.5rem;
+}
+.wallpaper-card {
+    border-radius:0.25rem;
+    text-align: center;
+}
+.wallpaper-card p {
+    font-size:20px;
+}
+.add-to-wishlist-btn{
+    background-color: rgb(175,0,0);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}

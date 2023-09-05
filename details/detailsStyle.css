@@ -1,0 +1,57 @@
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 400%;
+}
+#detailss {
+    text-align: center;
+}
+.wallpaperImg {
+    margin-top:0.5rem;
+    position:relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+  
+.wallpaperImg img {
+    margin-right: 1rem;
+    max-width: 50%;
+    border-radius: 0.25rem;
+}
+  
+.wallpaperImg .wallpaper-details h1 {
+    position:absolute;
+    top:0.5rem;
+    right:20%;
+}
+.wallpaperImg .wallpaper-details {
+    width: 100%;
+
+}
+.wallpaperImg .wallpaper-details p {
+    font-size:26px;
+}
+
+@media screen and (max-width: 768px) {
+    .wallpaperImg {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .wallpaperImg img {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+}
+.add-to-wishlist-btn{
+    background-color: rgb(175,0,0);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
