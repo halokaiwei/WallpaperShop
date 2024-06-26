@@ -4,8 +4,3 @@ Title: Web-based wallpaper shop.
 Database used: MyPhpAdmin
 Languages: HTML,CSS,PHP,JavaScript,JQuery
 
-Thanks to my teammates:
-Evelyn Lee Jien Dhong,
-Leow Li Yan,
-Tan Bao Yee,
-Tiang Chang Jing Eugene.
